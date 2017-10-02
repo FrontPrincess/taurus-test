@@ -1,6 +1,45 @@
 /*header*/
+
 .site-header {
-    display: table-header-group;
-    height: 1px;
+	padding: 38px 0;
+	background-color: transparent;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
 }
+
+.header {
+	&-nav {
+		display: flex;
+		justify-content: flex-end;
+		list-style: none;
+		margin-bottom: 0;
+		align-items: center;
+	}
+	&-item {
+		margin-right: 30px;
+		&:last-child {
+			margin-right: 0;
+		}
+		&__link {
+			font-size: 12px;
+			font-family: 'Montserrat-Medium';
+			padding: 10px 0;
+			text-transform: uppercase;
+			text-decoration: none;
+			display: block;
+			letter-spacing: 0.1em;
+			&:hover, &:focus {
+				text-decoration: none;
+			}
+		}
+		&:hover, &:focus, &.active {
+			.header-item__link {
+				color: #10c9c3;
+			}
+		}
+	}
+}
+
 /*END:header*/
