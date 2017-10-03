@@ -39,4 +39,6 @@ $(document).ready(function() {
     	dots: true,
     	arrows: false
     });
+
+    showMore('.work-item', '#loadMore');
 });

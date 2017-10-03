@@ -107,5 +107,12 @@ body {
     @extend %placeholder-style; 
 }
 
+a[href^="tel"] {
+    color: #fff;
+    &:hover, &:focus {
+        color: #fff;
+        text-decoration: none;
+    }
+}
 
 /*END:base*/

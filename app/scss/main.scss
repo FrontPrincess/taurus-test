@@ -153,6 +153,9 @@ span[class^=pe-7s-] {
                 opacity: 1;
             }
         }
+        &.hidden {
+        	display: none;
+        }
     }
     &-btn {
         display: block;
@@ -394,6 +397,7 @@ iframe {
 textarea.default-input {
     height: 170px;
     overflow: auto;
+    appearance: none;
 }
 
 
