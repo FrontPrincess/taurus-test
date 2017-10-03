@@ -1,6 +1,7 @@
 //= js-assets/functions
 
 $(document).ready(function() {
+	var isSkillAnimated = false;
     function ratingAnimation() {
         var skillsBlock = $('#skillsBlock');
 
@@ -19,6 +20,7 @@ $(document).ready(function() {
                     $(el).find('.item-bar__indicator').animate({
                         width: dataSkill + '%'
                     }, 1000);
+                    isSkillAnimated = true;
                 });
             }
         }
@@ -26,6 +28,8 @@ $(document).ready(function() {
 
     ratingAnimation();
     $(window).on('scroll', function(event) {
+    	if(!isSkillAnimated) {
         ratingAnimation();
+    	}
     });
 });

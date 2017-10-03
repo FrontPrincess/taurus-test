@@ -52,10 +52,17 @@
     &-list {
         list-style: none;
     }
+    &-item {
+    	margin-bottom: 40px;
+    }
+    .default-subtitle--small {
+    	margin-bottom: 20px;
+    }
 }
 
 .item {
     &-bar {
+    	max-width: 500px;
         width: 100%;
         height: 3px;
         background-color: #d8d8d8;
