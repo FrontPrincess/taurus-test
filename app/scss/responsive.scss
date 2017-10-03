@@ -1,0 +1,14 @@
+@media screen and (max-width: 1024px) {
+	.header-nav {
+		display: none;
+	}
+	.mobile-menu {
+		display: block;
+		.header-nav {
+			display: block;
+		}
+	}
+	.toggle-btn {
+		display: block;
+	}
+}

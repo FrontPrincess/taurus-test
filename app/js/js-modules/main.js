@@ -41,4 +41,17 @@ $(document).ready(function() {
     });
 
     showMore('.work-item', '#loadMore');
+
+    $('.site-header').on('click', '.toggle-btn', function(event) {
+        event.preventDefault();
+        $(this).parents().find('.mobile-menu').toggleClass('active');
+    });
+
+    var clickOutsideArgs = {
+        elementRemoveClass: $('.mobile-menu'),
+        elementToHide: $('.mobile-menu'),
+        elementToPreserve: $('.mobile-menu'),
+    }
+
+    clickOutside(clickOutsideArgs);
 });
