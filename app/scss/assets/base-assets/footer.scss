@@ -1,5 +1,45 @@
+@import '../_settings.scss';
+
 /*footer*/
 .site-footer {
-
+	padding: 100px 0 95px;
+	background-color: color('primary');
 }
+
+.footer {
+	&-description {
+		display: block;
+		font-size: 15px;
+		line-height: 24px;
+		color: #fff;
+		font-family: 'NunitoSans-Regular';
+		text-decoration: none;
+		&:hover, &:focus {
+			color: #fff;
+			text-decoration: none;
+		}
+	}
+	&-title {
+		color: #fff;
+		font-family: 'Montserrat-Medium';
+		font-weight: normal;
+		font-size: 18px;
+	}
+	&-item {
+		.footer-description {
+			text-transform: capitalize;
+		}
+		&--socials, &--contacts {
+			padding-left: 85px;
+		}
+	}
+	&-menu {
+		display: flex;
+		padding-left: 85px;
+		.footer-item {
+			width: 50%;
+		}
+	}
+}
+
 /*END:footer*/
