@@ -1,25 +1,31 @@
 //= js-assets/functions
 
 $(document).ready(function() {
-	$(window).on('scroll', function(event) {
-		var skillsBlock = $('#skillsBlock');
+    function ratingAnimation() {
+        var skillsBlock = $('#skillsBlock');
 
-		if(skillsBlock.length) {
-			if($(this).scrollTop >= skillsBlock.offset().top) {
+        if (skillsBlock.length) {
 
-			$('.skills-item').each(function(index, el) {
+            if ($(window).scrollTop() >= (skillsBlock.offset().top - $('#header').outerHeight())) {
 
-				var dataSkill = $(this).data('skill');
+                $('.skills-item').each(function(index, el) {
 
-				$(el).find('.percentage').text(dataSkill);
-				$(el).find('.item-bar__indicator').animate({
-					width: dataSkill + '%'
-				}, 1000);	
-			});
-		}
-		}
-	});
+                    var dataSkill = $(this).data('skill');
+
+                    $(el).find('.percentage').text(dataSkill);
+                    $(el).find('.item-bar__indicator').css({
+                        'width': 0
+                    });
+                    $(el).find('.item-bar__indicator').animate({
+                        width: dataSkill + '%'
+                    }, 1000);
+                });
+            }
+        }
+    }
+
+    ratingAnimation();
+    $(window).on('scroll', function(event) {
+        ratingAnimation();
+    });
 });
-
-
-
