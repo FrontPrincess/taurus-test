@@ -18,16 +18,24 @@
 
 %placeholder-style {
     &::-webkit-input-placeholder {
-        color: #fff;
+        color: #787878;
+        font-family: 'NunitoSans-Regular';
+        font-size: 15px;
     }
     &::-moz-placeholder {
-        color: #fff;
+        color: #787878;
+        font-family: 'NunitoSans-Regular';
+        font-size: 15px;
     }
     &:-moz-placeholder {
-        color: #fff;
+        color: #787878;
+        font-family: 'NunitoSans-Regular';
+        font-size: 15px;
     }
     &:-ms-input-placeholder {
-        color: #fff;
+        color: #787878;
+        font-family: 'NunitoSans-Regular';
+        font-size: 15px;
     }
 }
 

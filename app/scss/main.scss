@@ -251,7 +251,7 @@ iframe {
         }
     }
     &-item__description {
-    	max-width: 830px;
+    	max-width: 820px;
     	margin: 0 auto;
     }
 }
@@ -306,3 +306,42 @@ iframe {
 }
 
 /* END: .clients */
+
+/* .contact-form */
+
+.contact-form {
+	padding: 100px 0 100px;
+	background-color: #f5f5f5;
+}
+
+.main-form {
+	padding: 0 50px;
+	.default-btn {
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+.title-block {
+	text-align: center;
+	.default-description {
+		max-width: 550px;
+	}
+}
+
+.contact-info {
+	display: flex;
+	.default-input {
+		flex-grow: 1;
+		&:first-child {
+			margin-right: 30px;
+		}
+	}
+}
+
+textarea.default-input {
+	height: 170px;
+	overflow: auto;
+}
+
+/* END: .contact-form */
