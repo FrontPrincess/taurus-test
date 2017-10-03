@@ -36,6 +36,7 @@
 			text-decoration: none;
 			display: block;
 			letter-spacing: 0.1em;
+			@extend %default-transition;
 			&:hover, &:focus {
 				text-decoration: none;
 			}
@@ -43,6 +44,7 @@
 		&:hover, &:focus, &.active {
 			.header-item__link {
 				color: #10c9c3;
+				@extend %default-transition;
 			}
 		}
 	}
