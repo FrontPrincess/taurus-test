@@ -215,12 +215,13 @@ span[class^=pe-7s-] {
     transform: translate(-50%, -50%);
     width: 85px;
     height: 85px;
-    background-color: #EAEAEA;
+    background-color: #eaeaea;
     background-image: url('../img/start-video.png');
     background-position: 50% 50%;
     background-size: contain;
     background-repeat: no-repeat;
     cursor: pointer;
+    border-radius: 50%;
 }
 
 iframe {
@@ -235,9 +236,6 @@ iframe {
     background-color: #EAEAEA;
     position: relative;
 }
-
-
-
 
 /* END: .work-process */
 
