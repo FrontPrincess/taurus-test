@@ -44,6 +44,26 @@
 		bottom: 0;
 		width: 50%;
 	}
+	&-list {
+		list-style: none;
+	}
+}
+
+.item {
+	&-bar {
+		width: 100%;
+		height: 3px;
+		background-color: #d8d8d8;
+		position: relative;
+		&__indicator {
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			background-color: #10c9c3;
+			transition: all 0.15s ease-in;
+		}
+	}
 }
 
 /* END: .skills */
