@@ -1,4 +1,7 @@
 @media screen and (max-width: 1199px) {
+    .container-fluid {
+    	width: 970px;
+    }
     .services-item {
         min-height: 200px;
     }
@@ -60,6 +63,12 @@
     }
 }
 
+@media screen and (max-width: 991px) {
+	.container-fluid {
+		width: 750px;
+	}
+}
+
 @media screen and (max-width: 768px) {
     .numbers-item {
         margin-bottom: 10px;
@@ -76,6 +85,12 @@
     .video-block {
         height: 405px;
     }
+}
+
+@media screen and (max-width: 767px) {
+	.container-fluid {
+		width: 100%;
+	}
 }
 
 @media screen and (max-width: 425px) {
