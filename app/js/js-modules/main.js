@@ -1,7 +1,24 @@
 //= js-assets/functions
 
 $(document).ready(function() {
+    $('.site-header').on('click', '.toggle-btn', function(event) {
+        event.preventDefault();
+        $(this).parents().find('.mobile-menu').toggleClass('active');
+    });
 
+    $('.header-item').on('click', function(event) {
+        event.preventDefault();
+        $(this).addClass('active').siblings().removeClass('active');
+    });
+
+    var clickOutsideArgs = {
+        elementRemoveClass: $('.mobile-menu'),
+        elementToHide: $('.mobile-menu'),
+        elementToPreserve: $('.mobile-menu'),
+    }
+
+    clickOutside(clickOutsideArgs);
+    
     var isSkillAnimated = false;
 
     function ratingAnimation() {
@@ -36,22 +53,10 @@ $(document).ready(function() {
     });
 
     $('.testimonials-list').slick({
-    	dots: true,
-    	arrows: false
+        dots: true,
+        arrows: false
     });
 
     showMore('.work-item', '#loadMore');
 
-    $('.site-header').on('click', '.toggle-btn', function(event) {
-        event.preventDefault();
-        $(this).parents().find('.mobile-menu').toggleClass('active');
-    });
-
-    var clickOutsideArgs = {
-        elementRemoveClass: $('.mobile-menu'),
-        elementToHide: $('.mobile-menu'),
-        elementToPreserve: $('.mobile-menu'),
-    }
-
-    clickOutside(clickOutsideArgs);
 });
