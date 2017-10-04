@@ -1,3 +1,9 @@
+@media screen and (max-width: 1199px) {
+    .services-item {
+        min-height: 200px;
+    }
+}
+
 @media screen and (max-width: 1024px) {
     .header-nav {
         display: none;
@@ -34,6 +40,24 @@
     .work-item {
         height: 240px;
     }
+    .video-block {
+        height: 528px;
+    }
+    .site-footer {
+        padding: 50px 0 50px;
+    }
+    .footer-item--socials,
+    .footer-item--contacts,
+    .footer-menu {
+        padding-left: 15px;
+    }
+    .footer-title {
+        font-size: 16px;
+    }
+    .footer-description {
+        font-size: 13px;
+        line-height: 22px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -46,9 +70,18 @@
     .work-item {
         height: 185px;
     }
+    .testimonials-item__description {
+        padding: 0 20px;
+    }
+    .video-block {
+        height: 405px;
+    }
 }
 
 @media screen and (max-width: 425px) {
+    .site-header {
+        padding: 15px 0;
+    }
     .work-item {
         width: 50%;
         &:nth-child(8n+1),
@@ -61,5 +94,97 @@
         &:nth-child(4n+4) {
             background-color: #838383;
         }
+    }
+    .banner {
+        padding: 115px 0 100px;
+        &-inner {
+            padding: 0 20px;
+        }
+    }
+    .default-title {
+        font-size: 25px;
+    }
+    .default-subtitle {
+        font-size: 24px;
+        &--small {
+            font-size: 12px;
+        }
+    }
+    .default-description {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .skills {
+        padding: 80px 0 50px;
+    }
+    .numbers,
+    .work-process,
+    .services,
+    .contact-form {
+        padding: 50px 0 50px;
+    }
+    .video-block {
+        height: 220px;
+    }
+    .testimonials-list__item {
+        padding: 70px 0 140px;
+    }
+    .testimonials-list__item blockquote p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .testimonials-list__item blockquote cite {
+        font-size: 10px;
+    }
+    .work-btn {
+        padding: 30px 0;
+    }
+    .services-item {
+        min-height: auto;
+    }
+    .clients {
+        padding: 35px 0 35px;
+    }
+    .main-form {
+        padding: 0;
+    }
+    .contact-info {
+        flex-wrap: wrap;
+        .default-input:first-child {
+            margin-right: 0;
+        }
+    }
+    .default-btn {
+        padding: 15px 35px;
+    }
+    .default-input {
+        font-size: 13px;
+        padding: 11px 15px;
+    }
+    .footer-description {
+        font-size: 11px;
+    }
+    .footer-title {
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+    .footer-menu,
+    .footer-item--socials {
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .video-block {
+        height: 194px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .video-block {
+        height: 164px;
+    }
+    .mobile-menu {
+        width: 220px;
     }
 }
