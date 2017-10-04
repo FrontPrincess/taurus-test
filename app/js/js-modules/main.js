@@ -54,7 +54,9 @@ $(document).ready(function() {
 
     $('.testimonials-list').slick({
         dots: true,
-        arrows: false
+        arrows: false,
+        autoplay: true,
+        autoSpeed: 2000
     });
 
     showMore('.work-item', '#loadMore');
