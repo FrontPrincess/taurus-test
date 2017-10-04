@@ -2,7 +2,7 @@
 
 /*footer*/
 .site-footer {
-	padding: 100px 0 95px;
+	padding: 95px 0 95px;
 	background-color: color('primary');
 }
 
@@ -24,6 +24,7 @@
 		font-family: 'Montserrat-Medium';
 		font-weight: normal;
 		font-size: 18px;
+		padding-top: 3px;
 	}
 	&-item {
 		.footer-description {

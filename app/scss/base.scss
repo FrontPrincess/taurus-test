@@ -25,19 +25,11 @@ body {
     width: 1200px;
 }
 
-.myContainer {
-    position: relative;
-    max-width: gridValue('container');
-    margin: 0 auto;
-
-    @extend .clearfix;
-}
-
 .default-title {
     font-family: 'Montserrat-Medium';
     font-size: 38px;
     font-weight: normal;
-    margin-bottom: 35px;
+    margin-bottom: 27px;
     letter-spacing: 0.01em;
     text-transform: capitalize;
     color: color('primary');
@@ -61,7 +53,7 @@ body {
     font-family: 'NunitoSans-Regular';
     font-size: 16px;
     line-height: 24px;
-    margin-bottom: 40px;
+    margin-bottom: 35px;
     letter-spacing: 0.005em;
     color: color('secondary');
     &--big {
