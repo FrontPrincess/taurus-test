@@ -25,18 +25,25 @@
 		font-weight: normal;
 		font-size: 18px;
 		padding-top: 3px;
+		margin-bottom: 22px;
 	}
 	&-item {
 		.footer-description {
 			text-transform: capitalize;
 		}
-		&--socials, &--contacts {
+		&:nth-of-type(2) {
+			padding-left: 12px;
+		}
+		&--contacts {
 			padding-left: 85px;
+		}
+		&--socials {
+			padding-left: 84px;
 		}
 	}
 	&-menu {
 		display: flex;
-		padding-left: 85px;
+		padding-left: 83px;
 		.footer-item {
 			width: 50%;
 		}
